@@ -1,1 +1,24 @@
 <h2>Update the drone</h2>
+
+<!-- add the value tag to have the values passed to the object after edit. The drone comes from the GET edit -->
+
+<form action="/drones/create" method="POST">
+
+<label>
+    Name
+    <input type="text" name="name" value={{drone.name}}>
+</label>
+
+<label>
+    Propellers
+    <input type="number" name="propellers" value="{{drone.propellers}}">
+</label>
+
+<label>
+    Max Speed 
+    <input type="number" name="maxSpeed" value="{{drone.maxSpeed}}">
+</label>
+
+<button type="submit">Create Drone</button>
+
+</form>

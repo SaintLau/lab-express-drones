@@ -1,1 +1,23 @@
 <h2>Create a new drone</h2>
+
+<form action="/drones/create" method="POST">
+
+<label>
+    Name
+    <input type="text" name="name">
+</label>
+
+<label>
+    Propellers
+    <input type="number" name="propellers">
+</label>
+
+<label>
+    Max Speed 
+    <input type="number" name="maxSpeed">
+</label>
+
+<button type="submit">Create Drone</button>
+</form>
+
+<!-- the name tag is very important because is the one that will match the schema, per say -->
